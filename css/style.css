@@ -33,18 +33,29 @@
     font-style: italic;
 }
 
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .content-width {
-    width: 80vw;
+    width: 80%;
     max-width: 1100px;        
-    margin: 0 auto;
-    padding: 0 1rem; 
+    margin: auto;
 }
 
 section.content-width {
-    display: grid;
-    grid-template-columns: 1fr 320px;  /* main | sidebar */
+    display: flex;
     gap: 2rem;
-    align-items: start;
+}
+
+#main-section {
+    background-color: blue;
 }
 
 .goofy {
@@ -62,4 +73,17 @@ section.content-width {
 header h1 {
     font-family: "Wolf's Bane";
     font-size: 50px;
+}
+
+#right-sidebar {
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+#blinkies-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
